@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<div class="editable">
+  <p id="edit-article_title">
+    <b>Title:</b>
+    <%= @article.title %>
+    <%= link_to 'Edit', edit_article_path(@article) %>
+  </p>
+
+  <p id="edit-article_body">
+    <b>Body:</b>
+    <%= @article.body %>
+    <%= link_to 'Edit', edit_article_path(@article) %>
+  </p>
+
+  <p id="edit-article_is_published">
+    <b>Is published:</b>
+    <%= @article.is_published %>
+    <%= link_to 'Edit', edit_article_path(@article) %>
+  </p>
+  
+  <%= link_to 'Edit', edit_article_path(@article), :class => 'edit-form' %> |
+  <%= link_to 'Back', articles_path %>
+  
+</div>
+
+
